@@ -25,9 +25,10 @@ jobs:
 
       - name: Criar usuário para acesso
         run: |
-          net user RunnerAdmin MinhaSenha123! /add
-          net localgroup administrators RunnerAdmin /add
+          net user felipe12345 MinhaSenha123! /add
+          net localgroup administrators felipe12345 /add
 
       - name: Manter a VM ativa
         run: |
           while ($true) { Start-Sleep -Seconds 60 }
+          
